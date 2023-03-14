@@ -83,8 +83,8 @@ const Main = (props: IMainProps) => {
             <Logo className={titleFont.className}>{AppConfig.title}</Logo>
             <NavLinks>
                 <NavLink href="/">Home</NavLink>
-                <NavLink href="/profile">{ user ? 'Profile' : 'Sign in' }</NavLink>
-                { user && <NavLink href="/blogPost">New blog post</NavLink> }
+                <NavLink href="/profile/profile">{ user ? 'Profile' : 'Sign in' }</NavLink>
+                { user && <NavLink href="/blog/post/post">New blog post</NavLink> }
             </NavLinks>
         </AppBar>
 

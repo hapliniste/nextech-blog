@@ -2,10 +2,11 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 import Head from "next/head";
 
-import { Auth } from '@supabase/auth-ui-react'
 import { ThemeSupa } from '@supabase/auth-ui-shared'
 import { useUser, useSupabaseClient } from '@supabase/auth-helpers-react'
 import { useEffect, useState } from 'react'
+
+import LoginForm from '@/components/loginForm/loginForm';
 
 export default function Profile() {
   const supabaseClient = useSupabaseClient()
@@ -23,13 +24,7 @@ export default function Profile() {
 
   if (!user)
     return (
-      <Auth
-        redirectTo="http://localhost:3000/"
-        appearance={{ theme: ThemeSupa }}
-        supabaseClient={supabaseClient}
-        providers={['google', 'github']}
-        socialLayout="horizontal"
-      />
+      <LoginForm/>
     )
 
   return (
