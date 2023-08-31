@@ -1,0 +1,50 @@
+├── generateStructure.js
+├── jest.config.js
+├── next-env.d.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── projectStructureGOOD.txt
+├── public
+│  ├── favicon.ico
+│  ├── next.svg
+│  ├── thirteen.svg
+│  └── vercel.svg
+├── README.md
+├── scaffoldNextSupabase.txt
+├── src
+│  ├── components
+│    └── loginForm
+│      └── loginForm.tsx
+│  ├── layout
+│    └── main.tsx
+│  ├── pages
+│    ├── api
+│      └── hello.ts
+│    ├── blog
+│      └── post
+│        ├── post.tsx
+│        └── [id].tsx
+│    ├── index.tsx
+│    ├── profile
+│      └── profile.tsx
+│    ├── _app.tsx
+│    └── _document.tsx
+│  ├── types
+│    └── database.ts
+│  └── utils
+│    ├── appConfig.ts
+│    └── initSupabase.ts
+├── styles
+│  └── theme.ts
+├── tsconfig.json
+└── wiki
+│  ├── home.md
+│  ├── pages
+│    ├── contact.md
+│    ├── homepage.md
+│    ├── pages.md
+│    ├── post.md
+│    ├── post_id.md
+│    └── profile.md
+│  └── planning.md
